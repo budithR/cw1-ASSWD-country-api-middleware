@@ -1,0 +1,42 @@
+:root {
+    --bg-color: #f5f5f5;
+    --nav-bar-color: #979797;
+  }
+  
+[data-theme='dark'] {
+    --bg-color: #7c7676;
+    --nav-bar-color: #777676;
+
+}
+
+nav {
+    background-color: var(--bg-color);
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: var(--nav-bar-color);
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navbar-logout-button{
+    background-color: rgb(231, 54, 54);
+    /* color: rgb(233, 21, 21); */
+    /* color: black; */
+    transition: background-color 0.25s;
+    /* border: none; */
+}
+
+.navbar-logout-button:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+
